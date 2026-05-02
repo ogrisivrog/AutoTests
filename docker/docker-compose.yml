@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  тесты:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: qa_тесты
+    environment:
+      - BASE_URL=https://jsonplaceholder.typicode.com
+      - TIMEOUT=10
+    volumes:
+      - ../reports:/app/reports
+    command: pytest -v --override-ini="addopts=-v --tb=short"
