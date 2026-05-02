@@ -1,15 +1,13 @@
 # QA Automation — тестирование JSONPlaceholder API
 
-[![CI](https://github.com/ВАШ_ЛОГИН/qa-pet/actions/workflows/ci.yml/badge.svg)](https://github.com/ВАШ_ЛОГИН/qa-pet/actions)
-[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://python.org)
-[![pytest](https://img.shields.io/badge/tested%20with-pytest-orange)](https://pytest.org)
+
 
 Пет-проект для отработки навыков QA Automation.  
 Тестирую публичный REST API [JSONPlaceholder](https://jsonplaceholder.typicode.com/) — это бесплатный фейковый апи с постами, юзерами и комментариями.
 
 ---
 
-## Что умеет проект
+## Возможности проекта
 
 - Автоматически тестирует REST API (GET, POST, PUT, PATCH, DELETE)
 - Валидирует структуру ответов через Pydantic схемы
@@ -49,9 +47,9 @@ qa-pet/
 ├── tests/
 │   ├── conftest.py        # общие фикстуры для всех тестов
 │   ├── smoke/             # быстрые проверки что апи живое
-│   ├── posts/             # тесты для /posts
-│   ├── users/             # тесты для /users
-│   └── comments/          # тесты для /comments
+│   ├── posts/             
+│   ├── users/            
+│   └── comments/          
 ├── docker/
 │   ├── Dockerfile
 │   └── docker-compose.yml
